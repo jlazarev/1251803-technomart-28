@@ -69,19 +69,25 @@
     		</div>
 
     		<div class="slider">
-    			<div class="slider-top">
+    			<div class="slider-perforator">
     				<h3>Перфораторы</h3>
 
     				<span>Настоящие мужские игрушки</span>
+                </div>
 
-    				<button type="button" disabled>назад</button>
-    				<button type="button">вперёд</button>
+                <div class="slider-drill visually-hidden">
+                    <h3>Дрели</h3>
 
-    				<a href="catalog.html">открыть каталог</a>
+                    <span>Соседям на радость!</span>
+                </div>
 
-    				<input type="radio" name="slider" value="1" checked>
-    				<input type="radio" name="slider" value="2">
-    			</div>
+    			<button type="button" disabled>назад</button>
+    			<button type="button">вперёд</button>
+
+    			<a href="catalog.html">открыть каталог</a>
+
+    			<input type="radio" name="slider" value="1" checked>
+    			<input type="radio" name="slider" value="2">
     		</div>
 
     		<div class="advantage">
@@ -214,6 +220,27 @@
     				поднимая его на ваш этаж!
     			</p>
     		</div>
+
+            <div class="services-guarantee visually-hidden">
+                <h3>Гарантия</h3>
+
+                <p>
+                    Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+
+                </p>
+            </div>
+
+            <div class="services-credit visually-hidden">
+                <h3>Кредит</h3>
+
+                <p>
+                    Залезать в долговую яму стало проще!<br>
+                    Кредитные консультанты придут вам на помощь.
+                </p>
+
+                <a href="#">Отправить заявку</a>
+            </div>
+
     	</section>
 
     	<section class="about-us">
@@ -298,6 +325,33 @@
     		</span>
     	</div>
     </footer>
+
+    <div class="write-us-popup visually-hidden">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+            <p>
+                <label for="write-us-name">Ваше имя:</label>
+                <input type="text" name="write-us-name" placeholder="Имя Фамилия" id="write-us-name">
+            </p>
+
+            <p>
+                <label for="write-us-email">Ваш e-mail:</label>
+                <input type="email" name="write-us-email" placeholder="email@example.com" id="write-us-email">
+            </p>
+
+            <p>
+                <label for="text-letter">Текст письма:</label>
+                <textarea id="text-letter" placeholder="В свободной форме"></textarea>
+            </p>
+
+            <button type="submit">Оформить заказ</button>
+        </form>
+    </div>
+
+    <div class="map-popup visually-hidden">
+        <iframe></iframe>
+
+        <button type="button" aria-label="Закрыть"></button>
+    </div>
 
   </body>
 </html>
