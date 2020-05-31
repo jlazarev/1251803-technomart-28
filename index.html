@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
-    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
-
     <header class="header-page">
     	<div class="header-top">
-    			<a class="header-logo">
-    				<img src="img/header/logo-technomart.svg" width="108" height="18" alt="Техномарт">
-    			</a>
+    		<a class="header-logo">
+    			<img src="img/header/logo-technomart.svg" width="108" height="18" alt="Техномарт">
+    		</a>
 
     		<form action="https://echo.htmlacademy.ru/" method="get">
-    			<input type="text" value="Поиск" name="search">
+    			<input type="search" name="search" placeholder="Поиск:">
     		</form>
                 
     		<a href="">Закладки: 0</a>
@@ -26,8 +28,8 @@
     	<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
     	<div class="header-contacts">
-    		+7 (812) 555-05-55 <br> <!-- Временный перенос -->
-    		г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+    		<div class="phone">+7 (812) 555-05-55</div><br> <!-- Временный перенос -->
+    		<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 		</div>
 
 		<div class="authorization">
@@ -36,7 +38,7 @@
 		</div>
 
 		<nav>
-			<ul>
+			<ul class="site-navigation">
 				<li><a href="">Главная</a></li>
 				<li><a href="">Компани</a></li>
 				<li><a href="catalog.html">Каталог</a></li>
@@ -53,21 +55,21 @@
     	<h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта "Техномарт"</h1>
 
     	<section class="advantages">
-    		<h2>Преимущества</h2>
+    		<h2 class="visually-hidden">Преимущества</h2>
 
-    		<div class="advantage">
+    		<div class="advantage advantage-materials">
     			<h3>Материалы</h3>
 
     			<a href="#">на любой вкус</a>
     		</div>
 
-    		<div class="advantage">
+    		<div class="advantage advantage-tools">
     			<h3>Инструменты</h3>
 
     			<a href="#">на все случаи</a>
     		</div>
 
-    		<div class="advantage">
+    		<div class="advantage advantage-equipment">
     			<h3>Техника</h3>
 
     			<a href="#">для стройки</a>
@@ -95,13 +97,13 @@
     			<input type="radio" name="slider" value="2">
     		</div>
 
-    		<div class="advantage">
+    		<div class="advantage advantage-discount">
     			<h3>Скидка 50%</h3>
 
     			<a href="#">на 350 товаров</a>
     		</div>
 
-    		<div class="advantage">
+    		<div class="advantage advantage-delivery">
     			<h3>Доставка</h3>
 
     			<a href="#">Бесплатно</a>
