@@ -16,7 +16,9 @@
                 <img src="img/header/logo-technomart.svg" width="108" height="18" alt="Техномарт">
             </a>
 
-    		<input type="text" name="search" placeholder="Поиск:">
+            <form action="https://echo.htmlacademy.ru/" method="get">
+                <input type="search" name="search" placeholder="Поиск:">
+            </form>
 
     		<a href="blank.html">Закладки: 0</a>
     		<a href="blank.html">Корзина: 10</a>
@@ -26,18 +28,18 @@
     	<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
     	<div class="header-contacts">
-    		+7 (812) 555-05-55 <br> <!-- Временный перенос -->
-    		г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+    		<div class="phone">+7 (812) 555-05-55</div><br> <!-- Временный перенос -->
+            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 		</div>
 
         <div class="authorization">
             <a href="blank.html">Равшан Джамшутович</a>
-            <a href="blank.html">Мои заказы</a>
-            <a href="blank.html">Личный кабинет</a>
+            <a class="my-orders" href="blank.html">Мои заказы</a>
+            <a class="personal-area" href="blank.html">Личный кабинет</a>
         </div>
 
 		<nav>
-			<ul>
+			<ul class="site-navigation">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="blank.html">Компани</a></li>
 				<li><a href="catalog.html">Каталог</a></li>
@@ -51,7 +53,7 @@
 
     <main>
 
-        <h1>Перфораторы</h1>
+        <h1 class="catalog-title">Перфораторы</h1>
 
         <ul class="breadcrumbs">
             <li><a href="index.html">домашняя</a></li>
@@ -62,7 +64,7 @@
 
     	
     	   
-        <section>
+        <section class="filters">
             <h2>Фильтр:</h2>
 
     		<form class="filters" action="https://echo.htmlacademy.ru/" method="get">
@@ -70,7 +72,8 @@
                     <legend>Цена:</legend>
                     <!-- фильтер цены с переключателями -->
 
-                    <input type="text" name="min-price" value="0"> - 
+                    <input type="text" name="min-price" value="0"> 
+                    <span>-</span> 
                     <input type="text" name="max-price" value="30000">
                 </fieldset>
 
@@ -125,7 +128,7 @@
     		</form>
         </section>
 
-        <section>
+        <section class="sorting">
             <h2>Сортировка:</h2>
 
             <ul>
@@ -275,7 +278,7 @@
         		</li>
             </ul>
 
-        <ul>
+        <ul class="numbers-list">
             <li>
                 <a>1</a>
             </li>
@@ -291,7 +294,7 @@
         </ul>
     	</section>
 
-        <section>
+        <section class="two-words">
             <h2>Пара слов о перфораторах</h2>
 
             <p>

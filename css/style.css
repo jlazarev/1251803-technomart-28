@@ -27,6 +27,8 @@
 	--background-grey: #F3F7F9;
 	--grey-discount: #A9A9A9;
 	--background-greylight: #F1F5F7;
+	--background-greylight2: #F2F6F8;
+	--background-filters: #F7F3EC;
 }
 
 /* Global */
@@ -68,6 +70,10 @@ img {
 	color: var(--basic-white);
 }
 
+.header-logo {
+	background-color: var(--basic-red);
+}
+
 .header-top input[name="search"] {
 	background-color: var(--background-greydark);
 	border: none;
@@ -101,6 +107,13 @@ img {
 	color: var(--basic-black);
 }
 
+a.my-orders,
+a.personal-area {
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--grey);
+}
+
 .site-navigation {
 	list-style: none;
 	background-color: var(--grey);
@@ -108,6 +121,27 @@ img {
 
 .site-navigation a {
 	color: var(--basic-white);
+}
+
+
+/* breadcrumbs */
+
+.breadcrumbs {
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	list-style: none;
+}
+
+/* catalog */
+
+.catalog-title {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--grey);
+	background-color: var(--background-greylight2);
 }
 
 /* advantages */
@@ -215,6 +249,8 @@ img {
 	list-style: none;
 }
 
+/* catalog-item */
+
 .catalog-item h3 {
 	font-family: "PT Sans", sans-serif;
 	font-weight: bold;
@@ -240,6 +276,22 @@ img {
 	text-align: center;
 	color: var(--basic-white);
 	background-color: var(--basic-red);
+}
+
+.catalog-item a {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: var(--basic-white);
+	background-color: var(--basic-green);
+}
+
+.catalog-item button {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: var(--grey);
+	background-color: var(--basic-white);
 }
 
 /* popular-manufacturers */
@@ -286,7 +338,7 @@ img {
 	background-color: var(--grey);
 }
 
-.services li:first-child button {
+.services li:first-child button {  /*Селектор временный */
 	background-color: var(--basic-white);
 	color: var(--grey);
 }
@@ -318,7 +370,7 @@ img {
 .contacts p {
 	font-size: 13px;
 	line-height: 24px;
-	font-family: "PT Sans", sans-serif
+	font-family: "PT Sans", sans-serif;
 }
 
 .about-us ul {
@@ -382,4 +434,113 @@ img {
 .write-us-popup,
 .map-popup {
 	display: none;
+}
+
+/* filters */
+
+.filters h2 {
+	font-family: "PT Sans", sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	background-color: var(--background-filters);
+}
+
+.filters fieldset {
+	border: none;
+}
+
+.filters ul {
+	list-style: none;
+}
+
+.filters legend {
+	font-family: "PT Sans", sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.filters label {
+	font-family: "PT Sans", sans-serif;
+	font-size: 15px;
+	line-height: 19px;
+	text-transform: uppercase;
+}
+
+.filters input[type="submit"] {
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	background-color: var(--basic-white);
+	border: 1px solid black;  /* цвет временно */
+}
+
+.filters input[name="min-price"],
+.filters input[name="max-price"] {
+	font-family: "PT Sans", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	border: none;
+	background-color: var(--background-filters);
+}
+
+/* sorting */
+
+.sorting {
+	background-color: var(--background-filters);
+}
+
+.sorting h2,
+.sorting button {
+	font-family: "PT Sans", sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.sorting button {
+	border: none;
+	background-color: transparent;
+}
+
+.sorting ul {
+	list-style: none;
+}
+
+/* catalog-items */
+
+.catalog-items ul {
+	list-style: none;
+}
+
+.numbers-list a {
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: var(--basic-black); 
+}
+
+/* two-words */
+
+.two-words {
+	background-color: var(--background-greylight);
+}
+
+.two-words h2 {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.two-words p {
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
 }
