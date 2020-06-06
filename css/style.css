@@ -450,7 +450,7 @@ a.personal-area {
 .services {
 	background-color: var(--background-greylight);
 	padding-top: 64px;
-	height: 522px;
+	height: 522px;    /* !!!  Временно*/
 }
 
 .services h2 {
@@ -529,7 +529,8 @@ a.personal-area {
 .company-flex {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 70px;
+	margin-top: 70px;
+	margin-bottom: 70px;
 }
 
 .about-us {
@@ -576,7 +577,9 @@ a.personal-area {
 	background-color: var(--grey);
 }
 
-.footer-top {
+.footer-top,
+.footer-middle,
+.footer-bottom .container {
 	display: flex;
 	justify-content: space-between;
 }
@@ -590,9 +593,33 @@ a.personal-area {
 	padding-top: 20px;
 }
 
+.footer-middle {
+	margin-bottom: 54px;
+	margin-top: 22px;
+}
+
+.footer-bottom {
+	height: 107px;
+}
+
 .footer-page ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-page .nav-footer {
 	display: flex;
+	justify-content: space-between;
+}
+
+.footer-top .nav-footer {
+	width: 550px;
+	align-items: flex-end;
+}
+
+.footer-middle .nav-footer {
+	width: 525px;
 }
 
 .footer-page a {
