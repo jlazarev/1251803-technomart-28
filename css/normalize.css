@@ -333,10 +333,10 @@ summary {
  * white placeholder in Firefox, Chrome and Safari.
  */
 
-input[type="search"]::-webkit-input-placeholder {
+input[name="search"]::-webkit-input-placeholder {
   color: #fff;
 }
 
-input[type="search"]::-moz-placeholder {
+input[name="search"]::-moz-placeholder {
   color: #fff;
 }
