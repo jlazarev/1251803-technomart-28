@@ -232,6 +232,26 @@ img {
 	opacity: 1;
 }
 
+
+
+.magnifier {
+	position: absolute;
+	top: 12px;
+	left: 17px;
+	width: 17px;
+	height: 17px;
+	background-image: url("../img/header/icon-search-red.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	z-index: 3;
+	display: none;
+}
+
+.search:active ~ .magnifier,
+.search:focus ~ .magnifier {
+	display: block;
+}
+
 .header-middle {
 	display: flex;
 	min-height: 158px;
@@ -1232,7 +1252,7 @@ ul.social-network {
 	border-radius: 2px;
 	display: block;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 9px;
 	width: 100%;
 	text-align: center;
 }
