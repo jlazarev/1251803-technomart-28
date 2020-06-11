@@ -679,6 +679,7 @@ a.personal-area {
 	align-items: center;
 	padding-left: 28px;
 	margin-bottom: 20px;
+	padding-right: 14px;
 }
 
 .header-section h2 {
@@ -688,6 +689,8 @@ a.personal-area {
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
+	letter-spacing: -1px;
+	word-spacing: 3px;
 }
 
 .header-section a {
@@ -696,6 +699,11 @@ a.personal-area {
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+	width: 192px;
+	height: 38px;
+	text-align: center;
+	padding-top: 11px;
+	margin-top: -1px;
 }
 
 .popular-items ul {
@@ -829,20 +837,30 @@ a.personal-area {
 	width: 220px;
 	height: 145px;
 	border: 1px solid var(--greylight-gradient);
-	text-align: center;
-
 }
 
-.popular-manufacturers img {
+.manufacturer-link {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+}
 
+.manufacturer-link img {
+	position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 
 /* services */
 
 .services {
 	background-color: var(--background-greylight);
-	padding-top: 64px;
-	height: 522px;    /* !!!  Временно*/
+	padding-top: 65px;
+	min-height: 522px; 
 }
 
 .services h2 {
@@ -852,12 +870,14 @@ a.personal-area {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 25px;
+	letter-spacing: -0.8px;
 }
 
 .services p {
 	font-family: "PT Sans", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
+	margin-bottom: 70px;
 }
 
 .services-flex {
@@ -870,6 +890,10 @@ a.personal-area {
 	line-height: 24px;
 	color: var(--grey);
 	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	letter-spacing: -0.8px;
+	margin-bottom: 34px;
 }
 
 .services ul {
@@ -880,6 +904,19 @@ a.personal-area {
 	justify-content: center;
 	margin: 0;
 	padding: 0;
+	position: relative;
+}
+
+.services ul::after {
+	content: "";
+	position: absolute;
+	background-image: url("../img/index/services/shadow.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 10px;
+	height: 279px;
+	right: 0;
+	z-index: 2;
 }
 
 .services button {
@@ -890,7 +927,9 @@ a.personal-area {
 	border: none;
 	background-color: var(--grey);
 	width: 240px;
-	height: 61px;
+	height: 62px;
+	text-align: left;
+	padding-left: 23px;
 }
 
 .services li:first-child button {  /*Селектор временный */
@@ -900,9 +939,17 @@ a.personal-area {
 
 .service {
 	padding-left: 80px;
+	padding-right: 306px;
+	outline: 2px solid red;
 }
 
-.service-guarantee,
+.service p {
+	padding: 0;
+	margin: 0;
+}
+
+.service-delivery,
+/*.service-guarantee,*/
 .service-credit {
 	display: none;
 }
@@ -914,6 +961,12 @@ a.personal-area {
 	text-transform: uppercase;
 	color: var(--basic-white);
 	background-color: var(--basic-red);
+}
+
+.service-guarantee {
+	background-image: url("../img/index/services/guarantee.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
 }
 
 /* about-us and contacts */
