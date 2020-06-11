@@ -564,6 +564,7 @@ a.personal-area {
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 6px;
 }
 
 .slider-perforator {
@@ -571,6 +572,9 @@ a.personal-area {
 	background-image: url(../img/index/advantages/perforator.jpg);
 	background-repeat: no-repeat;
 	color: var(--basic-white);
+	padding-top: 23px;
+	padding-left: 24px;
+	display: none;
 }
 
 .slider-drill {
@@ -579,6 +583,8 @@ a.personal-area {
 	background-repeat: no-repeat;
 	color: var(--basic-white);
 	display: none;
+	padding-top: 23px;
+	padding-left: 24px;
 }
 
 .slider a {
@@ -587,14 +593,69 @@ a.personal-area {
 	text-transform: uppercase;
 	background-color: var(--basic-red);
 	color: var(--basic-white);
+	padding: 11px 46px 9px;
+	bottom: 27px;
+	left: 24px;
+}
+
+.slider-controls {
+	bottom: 30px;
+	left: 50%;
+	margin-left: -18px;
+}
+
+.slider input {
+	display: none;
+}
+
+.slider-controls label {
+  display: inline-block;
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--basic-white);
+  background-color: var(--basic-white);
+  cursor: pointer;
+}
+
+.radio-1:checked ~ .slider-controls label[for="radio-1"],
+.radio-2:checked ~ .slider-controls label[for="radio-2"] {
+  background-color: var(--basic-red);
+}
+
+.radio-1:checked ~ .slider-perforator {
+  display: block;
+}
+
+.radio-2:checked ~ .slider-drill {
+  display: block;
+}
+
+.slider button {
+	width: 23px;
+	height: 41px;
+	top: 122px;
+	font-size: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.slider .back {
+	left: 24px;
+	background-image: url("../img/index/advantages/icon-left.svg");
+}
+
+.slider .forward {
+	right: 20px;
+	background-image: url("../img/index/advantages/icon-left.svg");
+	transform: rotate(180deg);
 }
 
 .slider a,
 .slider button,
-.slider input {
+.slider-controls {
 	position: absolute;
-	left: 0;
-	top: 0;
 }
 
 .slider-perforator,
