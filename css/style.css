@@ -314,7 +314,7 @@ img {
 	margin-left: auto;
 }
 
-.authorization a {
+.authorization > a {
 	font-size: 21px;
 	line-height: 21px;
 	color: var(--basic-black);
@@ -367,6 +367,10 @@ img {
 .authorization .registration {
 	padding: 12px 24px;
 
+}
+
+.user {
+	padding: 12px 56px;
 }
 
 a.my-orders,
@@ -1511,6 +1515,10 @@ ul.social-network {
 	padding-bottom: 25px;
 }
 
+.filters fieldset:last-of-type {
+	border: none;
+}
+
 .filters ul {
 	list-style: none;
 }
@@ -1538,7 +1546,11 @@ ul.social-network {
 	line-height: 18px;
 	text-transform: uppercase;
 	background-color: var(--basic-white);
-	border: 1px solid black;  /* цвет временно */
+	border: 1px solid var(--greylight-gradient);
+	width: 100%;
+	margin-top: 12px;
+	padding: 9px;
+	cursor: pointer;
 }
 
 .range-controls {
@@ -1558,7 +1570,7 @@ ul.social-network {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 89%;
   height: 2px;
   background: var(--basic-green);
 }
@@ -1634,15 +1646,52 @@ ul.social-network {
 	position: absolute;
 	top: -2px;
 	left: 0;
-	width: 23px;
+	width: 27px;
 	height: 23px;
 	background-image: url("../img/catalog/checkbox-off.svg");
 	background-repeat: no-repeat;
+	opacity: 0.6;
+}
+
+.manufacturers-filter label:hover::before {
+	opacity: 1;
+}
+
+.filter-input-checkbox:checked + label:before {
+	background-image: url("../img/catalog/checkbox-on.svg");
+}
+
+.filter-input-checkbox:disabled + label:before {
+	opacity: 0.2;
+}
+
+fieldset.supply-filter {
+	margin-top: 16px;
+	padding-top: 17px;
 }
 
 .supply-filter label::before {
 	content: "";
+	width: 25px;
+	height: 26px;
+	position: absolute;
+	top: -2px;
+	left: 0;
 	background-image: url("../img/catalog/radio-off.svg");
+	background-repeat: no-repeat;
+	opacity: 0.6;
+}
+
+.supply-filter label:hover::before {
+	opacity: 1;
+}
+
+.filter-input-radio:checked + label:before {
+	background-image: url("../img/catalog/radio-on.svg");
+}
+
+.filter-input-radio:disabled + label:before {
+	opacity: 0.2;
 }
 
 /* sorting */
@@ -1716,6 +1765,11 @@ ul.social-network {
 	padding-bottom: 9px;
 	width: 100%;
 	text-align: center;
+}
+
+.numbers-list a:not([href]) {
+	background-color: var(--basic-red);
+	color: var(--basic-white);
 }
 
 /* description */
