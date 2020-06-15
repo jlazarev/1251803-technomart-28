@@ -371,6 +371,55 @@ img {
 
 .user {
 	padding: 12px 56px;
+	position: relative;
+}
+
+.user::before {
+	content: "";
+	position: absolute;
+	top: 13px;
+	left: 15px;
+	width: 20px;
+	height: 18px;
+	background-image: url("../img/header/icon-user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.user::after {
+	content: "";
+	position: absolute;
+	top: 14px;
+	right:17px;
+	width: 20px;
+	height: 17px;
+	background-image: url("../img/header/icon-logout.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.user:hover::before {
+	background-image: url("../img/header/icon-user-hover.svg");
+}
+
+.user:hover::after {
+	background-image: url("../img/header/icon-logout-hover.svg");
+}
+
+.user:active {
+	color: var(--basic-greylight);
+}
+
+.user:active::before {
+	background-image: url("../img/header/icon-user.svg");
+}
+
+.user:active::after {
+	background-image: url("../img/header/icon-logout.svg");
+}
+
+.user-menu {
+	outline: 1px solid red;
 }
 
 a.my-orders,
@@ -602,6 +651,10 @@ a.personal-area {
 	left: 24px;
 }
 
+.slider a:active {
+	background-color: var(--error);
+}
+
 .slider-controls {
 	bottom: 30px;
 	left: 50%;
@@ -710,6 +763,10 @@ a.personal-area {
 	text-align: center;
 	padding-top: 11px;
 	margin-top: -1px;
+}
+
+.header-section a:active {
+	background-color: var(--error);
 }
 
 .popular-items ul {
@@ -1094,6 +1151,10 @@ a.personal-area {
 	padding-top: 11px;
 }
 
+.service-credit a:active {
+	background-color: var(--error);
+}
+
 p.credit-paragraf {
 	margin-bottom: 28px;
 }
@@ -1224,6 +1285,10 @@ p.credit-paragraf {
 .contacts-company a {
 	margin-top: 18px;
 	width: 100%;
+}
+
+.company-link:active {
+	background-color: var(--error);
 }
 
 /* footer */
@@ -1699,6 +1764,8 @@ fieldset.supply-filter {
 .sorting {
 	background-color: var(--background-filters);
 	display: flex;
+	justify-content: space-between;
+	border-radius: 2px;
 }
 
 .sorting h2,
@@ -1710,6 +1777,10 @@ fieldset.supply-filter {
 	text-transform: uppercase;
 }
 
+.sorting h2 {
+	margin-left: 19px;
+}
+
 .sorting button {
 	border: none;
 	background-color: transparent;
@@ -1718,6 +1789,13 @@ fieldset.supply-filter {
 .sorting ul {
 	list-style: none;
 	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.sorting li {
+	outline: 1px solid red;
 }
 
 /* catalog-items */
