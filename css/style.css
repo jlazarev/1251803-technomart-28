@@ -419,14 +419,33 @@ img {
 }
 
 .user-menu {
-	outline: 1px solid red;
+	display: flex;
+	justify-content: center;
+	margin-top: 7px;
 }
 
-a.my-orders,
-a.personal-area {
+.my-orders,
+.personal-area {
 	font-size: 16px;
 	line-height: 18px;
 	color: var(--grey);
+}
+
+.my-orders {
+	margin-right: 33px;
+	position: relative;
+}
+
+.my-orders::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	right: -18px;
+	width: 4px;
+	height: 4px;
+	background-color: var(--grey);
+	border-radius: 50%;
+	z-index: 2;
 }
 
 .site-navigation {
@@ -1764,12 +1783,11 @@ fieldset.supply-filter {
 .sorting {
 	background-color: var(--background-filters);
 	display: flex;
-	justify-content: space-between;
 	border-radius: 2px;
 }
 
 .sorting h2,
-.sorting button {
+.sorting label {
 	font-family: "PT Sans", sans-serif;
 	font-weight: normal;
 	font-size: 13px;
@@ -1779,23 +1797,70 @@ fieldset.supply-filter {
 
 .sorting h2 {
 	margin-left: 19px;
-}
-
-.sorting button {
-	border: none;
-	background-color: transparent;
+	margin-right: auto;
 }
 
 .sorting ul {
 	list-style: none;
 	display: flex;
-	align-items: center;
 	margin: 0;
 	padding: 0;
+	padding-top: 6px;
 }
 
 .sorting li {
-	outline: 1px solid red;
+	padding: 0;
+	margin: 0;
+}
+
+.sorting-list {
+	width: 420px;
+	justify-content: space-around;
+}
+
+.sorting-list label {
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted var(--basic-red);
+}
+
+.sorting-list label:hover {
+	color: var(--basic-black);
+	border-bottom: 1px solid var(--basic-red);
+}
+
+.sorting-radio:checked + label {
+	border: none;
+	color: var(--basic-red);
+}
+
+.sorting .arrows {
+	width: 70px;
+	justify-content: space-around;
+	padding-right: 4px;
+}
+
+.arrows label {
+	width: 11px;
+	height: 10px;
+	display: block;
+	margin-top: 8px;
+}
+
+.sorting-up {
+	background-image: url("../img/catalog/icon-up-hover.svg");
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
+.sorting-down {
+	background-image: url("../img/catalog/icon-down-hover.svg");
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
+.sorting-up:hover,
+.sorting-down:hover {
+	opacity: 1;
 }
 
 /* catalog-items */

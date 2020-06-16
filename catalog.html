@@ -45,7 +45,6 @@
                     <a class="user" href="#">Равшан Джамшутович</a>
                     <div class="user-menu">
                         <a class="my-orders" href="#">Мои заказы</a>
-                        <div class="point"></div>
                         <a class="personal-area" href="#">Дичный кабинет</a>
                     </div>
                 </div>
@@ -127,7 +126,7 @@
                             </li>
 
                             <li>    
-                    			<input class="filter-input-checkbox visually-hidden" type="checkbox" name="dewalt" value="dewalt" id="dewalt" disabled>
+                    			<input class="filter-input-checkbox visually-hidden" type="checkbox" name="dewalt" value="dewalt" id="dewalt">
                     			<label for="dewalt">dewalt</label>
                             </li>
 
@@ -161,21 +160,30 @@
             <section class="sorting">
                 <h2>Сортировка:</h2>
 
-                <ul>
+                <ul class="sorting-list">
                     <li>
-                        <button type="button">по цене</button>
-                    </li>
-                    <li>
-                        <button type="button">по типу</button>
+                            <input id="sorting-price" class="sorting-radio visually-hidden" type="radio" name="sorting-radio" value="sorting-price" checked>
+                            <label for="sorting-price">по цене</label>
                     </li>
                     <li>
-                        <button type="button">по фуекционалу</button>
+                            <input id="sorting-type" class="sorting-radio visually-hidden" type="radio" name="sorting-radio" value="sorting-type">
+                            <label for="sorting-type">по типу</label>
                     </li>
-                    <li class="arrow">
-                        <button type="button">по возрастанию</button>
+                    <li>
+                            <input id="sorting-function" class="sorting-radio visually-hidden" type="radio" name="sorting-radio" value="sorting-function">
+                            <label for="sorting-function">по функционалу</label>
                     </li>
-                    <li class="arrow">
-                        <button type="button">по убыванию</button>
+                </ul>
+
+                <ul class="arrows">
+                    <li>
+                        <input id="sorting-up" class="sorting-arrow visually-hidden" type="radio" name="sorting-arrow" value="up" checked>
+                        <label class="sorting-up" for="sorting-up" aria-label="по возратанию"></label>
+                        
+                    </li>
+                    <li>
+                        <input id="sorting-down" class="sorting-arrow visually-hidden" type="radio" name="sorting-arrow" value="down">  
+                        <label class="sorting-down" for="sorting-down" aria-label="по убыванию"></label>
                     </li>
                 </ul>
             </section>
