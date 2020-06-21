@@ -343,7 +343,7 @@
 
 	    		<img src="img/index/contacts/map.png" width="300" height="158" alt="Карта с адресом">
 
-	    		<a class="company-link" href="#">Заблудились? Напишите нам!</a>
+	    		<a class="company-link write-us-link" href="#">Заблудились? Напишите нам!</a>
 	    	</section>
 	    </div>
     </main>
@@ -405,32 +405,43 @@
 	    	</div>
     </footer>
 
-    <div class="write-us-popup">
-        <form action="https://echo.htmlacademy.ru/" method="post">
-            <p>
-                <label for="write-us-name">Ваше имя:</label>
-                <input type="text" name="write-us-name" placeholder="Имя Фамилия" id="write-us-name">
-            </p>
+    <section class="write-us-popup">
+    	<h2 class="visually-hidden">Напишите нам</h2>
 
-            <p>
-                <label for="write-us-email">Ваш e-mail:</label>
-                <input type="email" name="write-us-email" placeholder="email@example.com" id="write-us-email">
-            </p>
+        <form class="write-us-form" action="https://echo.htmlacademy.ru/" method="post">
+        	<div class="popup-container">
+            	<p>
+                	<label for="write-us-name">Ваше имя:</label>
+                	<input class="write-us-name" type="text" name="write-us-name" placeholder="Имя Фамилия" id="write-us-name">
+            	</p>
 
-            <p>
-                <label for="text-letter">Текст письма:</label>
-                <textarea id="text-letter" placeholder="В свободной форме"></textarea>
-            </p>
+            	<p>
+                	<label for="write-us-email">Ваш e-mail:</label>
+                	<input class="write-us-email" type="email" name="write-us-email" placeholder="email@example.com" id="write-us-email">
+            	</p>
 
-            <button type="submit">Оформить заказ</button>
+	            <p>
+	                <label for="text-letter">Текст письма:</label>
+	                <textarea class="write-us-text" id="text-letter" name="write-us-text" placeholder="В свободной форме"></textarea>
+	            </p>
+	        </div>
+
+	        <div class="popup-button-container">
+            	<button type="submit">Отправить</button>
+            </div>
         </form>
-    </div>
 
-    <div class="map-popup">
-        <iframe></iframe>
+        <button class="popup-close write-us-close" type="button" aria-label="Закрыть"></button>
+    </section>
 
-        <button type="button" aria-label="Закрыть"></button>
-    </div>
+    <section class="map-popup">
+    	<h2 class="visually-hidden">Как до нас добраться</h2>
 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.320894615957386!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1592741337196!5m2!1sru!2sru" width="940" height="443" allowfullscreen></iframe>
+
+        <button class="popup-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
