@@ -1332,6 +1332,10 @@ p.credit-paragraf {
 	background-color: var(--error);
 }
 
+.map-link {
+	cursor: pointer;
+}
+
 /* footer */
 
 .footer-page {
@@ -1709,6 +1713,7 @@ ul.social-network {
 
 .basket-popup-open {
 	display: flex;
+	animation: bounce 0.6s;
 }
 
 /* catalog */
