@@ -2,7 +2,8 @@ let mapLink = document.querySelector(".map-link");
 let mapPopup = document.querySelector(".map-popup");
 let mapClose = mapPopup.querySelector(".map-close");
 
-mapLink.addEventListener("click", function () {
+mapLink.addEventListener("click", function (evt) {
+	evt.preventDefault();
 	mapPopup.classList.add("popup-open");
 });
 

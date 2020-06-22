@@ -43,7 +43,7 @@ body {
 	min-width: 960px;
 	margin: 0;
 	padding: 0;
-	font-family: "Cuprum", sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	color: var(--basic-black);
@@ -62,7 +62,6 @@ a {
 img {
 	max-width: 100%;
 	height: auto;
-	/*outline: 1px solid blue;*/
 }
 
 *, *::before, *::after {
@@ -113,7 +112,6 @@ img {
 .header-top .link {
 	color: var(--basic-white);
 	min-width: 150px;
-	/*text-align: center;*/
 	padding-top: 10px;
 	padding-left: 29px;
 	position: relative;
@@ -238,8 +236,6 @@ img {
 .header-top form:hover::after {
 	opacity: 1;
 }
-
-
 
 .magnifier {
 	position: absolute;
@@ -376,12 +372,36 @@ img {
 
 }
 
-.user {
-	padding: 12px 56px;
+.authorization .user {
+	position: relative;
+
+	background-color: var(--basic-white);
+	font-size: 21px;
+	line-height: 21px;
+	display: inline-block;
+	margin-top: 46px;
+}
+
+.user .user-link {
+	width: calc(100%-50px);
+	display: inline-block;
+	color: var(--basic-black);
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 56px;
+	padding-right: 6px;
 	position: relative;
 }
 
-.user::before {
+.user .logout-link {
+	width: 46px;
+	height: 45px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+.user .user-link::before {
 	content: "";
 	position: absolute;
 	top: 13px;
@@ -393,10 +413,10 @@ img {
 	background-position: 0 0;
 }
 
-.user::after {
+.user .logout-link::after {
 	content: "";
 	position: absolute;
-	top: 14px;
+	top: 13px;
 	right:17px;
 	width: 20px;
 	height: 17px;
@@ -405,23 +425,23 @@ img {
 	background-position: 0 0;
 }
 
-.user:hover::before {
+.user .user-link:hover::before {
 	background-image: url("../img/header/icon-user-hover.svg");
 }
 
-.user:hover::after {
+.user .logout-link:hover::after {
 	background-image: url("../img/header/icon-logout-hover.svg");
 }
 
-.user:active {
+.user .user-link:active {
 	color: var(--basic-greylight);
 }
 
-.user:active::before {
+.user .user-link:active::before {
 	background-image: url("../img/header/icon-user.svg");
 }
 
-.user:active::after {
+.user .logout-link:active::after {
 	background-image: url("../img/header/icon-logout.svg");
 }
 
@@ -844,7 +864,7 @@ img {
 }
 
 .catalog-item h3 {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
@@ -869,7 +889,7 @@ img {
 }
 
 .catalog-item .item-discount {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 18px;
@@ -879,7 +899,7 @@ img {
 }
 
 .catalog-item .item-price {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 18px;
@@ -907,11 +927,6 @@ img {
 	top: 5.5px; 
 	right: -13.5px;
 }
-
-/*	Так хотел сделать :-)
-	background-color: linear-gradient(90deg, #ffffff 20%,#EE3643 20%, #EE3643 70%, #FFFFFF 70%);
-	background-image: url("../img/items/red-button.svg");
-*/
 
 .catalog-item a {
 	font-size: 14px;
@@ -1072,7 +1087,7 @@ img {
 }
 
 .services p {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	margin-bottom: 70px;
@@ -1268,7 +1283,7 @@ p.credit-paragraf {
 .contacts-company p {
 	font-size: 13px;
 	line-height: 24px;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -1324,7 +1339,7 @@ p.credit-paragraf {
 }
 
 .contacts-company a {
-	margin-top: 18px;
+	margin-top: 25px;
 	width: 100%;
 }
 
@@ -1332,7 +1347,12 @@ p.credit-paragraf {
 	background-color: var(--error);
 }
 
-.map-link {
+.contacts-company .map-link {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 300px; 
+	height: 158px;
 	cursor: pointer;
 }
 
@@ -1432,6 +1452,10 @@ p.credit-paragraf {
 }
 
 .footer-top a {
+	color: var(--background-greylight);
+}
+
+.footer-page .phone-link {
 	color: var(--background-greylight);
 }
 
@@ -1568,7 +1592,7 @@ ul.social-network {
 	height: 38px;
 	border: 2px solid var(--basic-greylight);
 	border-radius: 2px;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	padding-left: 10px;
@@ -1580,7 +1604,7 @@ ul.social-network {
 	height: 114px;
 	border: 2px solid var(--basic-greylight);
 	border-radius: 2px;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	padding-left: 10px;
@@ -1743,7 +1767,7 @@ ul.social-network {
 /* breadcrumbs */
 
 .breadcrumbs {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -1798,7 +1822,7 @@ ul.social-network {
 
 .filters h2 {
 	margin: 0;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
@@ -1832,7 +1856,7 @@ ul.social-network {
 }
 
 .filters legend {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 30px;
@@ -1842,14 +1866,14 @@ ul.social-network {
 }
 
 .filters label {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 19px;
 	text-transform: uppercase;
 }
 
 .filters input[type="submit"] {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -2012,7 +2036,7 @@ fieldset.supply-filter {
 
 .sorting h2,
 .sorting label {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
@@ -2130,7 +2154,7 @@ fieldset.supply-filter {
 }
 
 .numbers-list a {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -2175,7 +2199,7 @@ fieldset.supply-filter {
 }
 
 .description p {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	padding: 0;
