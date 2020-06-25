@@ -1621,6 +1621,7 @@ ul.social-network {
 	background-image: url("../img/icon-close.svg");
 	cursor: pointer;
 	border: none;
+	z-index: 4;
 }
 
 .popup-button-container {
@@ -1664,6 +1665,18 @@ ul.social-network {
 
 .map-popup iframe {
 	border: 0;
+	position: relative;
+	z-index: 2;
+}
+
+.map-popup p {
+	position: absolute;
+  	top: 0;
+  	left: 0;
+ 	z-index: 1;
+
+ 	margin: 0;
+ 	padding: 0;
 }
 
 .popup-open {
@@ -1674,6 +1687,7 @@ ul.social-network {
 .popup-error {
 	animation: shake 0.6s;
 }
+
 
 /* basket-popup */
 
