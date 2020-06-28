@@ -382,8 +382,8 @@ img {
 }
 
 .user .user-link {
-	width: calc(100%-50px);
 	display: inline-block;
+	width: calc(100%-50px);
 	color: var(--basic-black);
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -1569,14 +1569,14 @@ ul.social-network {
 	padding-top: 40px;
 }
 
-.write-us-popup p {
+.write-us-popup .form-item {
 	padding: 0;
 	margin: 0;
 	width: 220px;
 	flex-grow: 1;
 }
 
-.write-us-popup p:first-child {
+.write-us-popup .form-item:first-child {
 	margin-right: 20px;
 }
 
@@ -1618,6 +1618,7 @@ ul.social-network {
 	right: 11px;
 	background-color: transparent;
 	background-image: url("../img/icon-close.svg");
+	background-repeat: no-repeat;
 	cursor: pointer;
 	border: none;
 	z-index: 4;
