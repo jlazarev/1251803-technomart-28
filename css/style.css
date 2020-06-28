@@ -2050,7 +2050,7 @@ fieldset.supply-filter {
 }
 
 .sorting h2,
-.sorting label {
+.sorting .sorting-item {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: normal;
 	font-size: 13px;
@@ -2081,17 +2081,19 @@ fieldset.supply-filter {
 	justify-content: space-around;
 }
 
-.sorting-list label {
+.sorting-list .sorting-item {
 	color: rgba(0, 0, 0, 0.3);
+	background-color: transparent;
+	border: none;
 	border-bottom: 1px dotted var(--basic-red);
 }
 
-.sorting-list label:hover {
+.sorting-list .sorting-item:hover {
 	color: var(--basic-black);
 	border-bottom: 1px solid var(--basic-red);
 }
 
-.sorting-radio:checked + label {
+.sorting-list .sorting-checked {
 	border: none;
 	color: var(--basic-red);
 }
@@ -2102,11 +2104,12 @@ fieldset.supply-filter {
 	padding-right: 4px;
 }
 
-.arrows label {
+.arrows button {
 	width: 11px;
 	height: 10px;
 	display: block;
 	margin-top: 8px;
+	border: none;
 }
 
 .sorting-up {
@@ -2126,12 +2129,12 @@ fieldset.supply-filter {
 	opacity: 1;
 }
 
-.sorting-arrow:checked + .sorting-up {
+.sorting-up.arrow-checked {
 	background-image: url("../img/catalog/icon-up-active.svg");
 	opacity: 1;
 }
 
-.sorting-arrow:checked + .sorting-down {
+.sorting-down.arrow-checked {
 	background-image: url("../img/catalog/icon-down-active.svg");
 	opacity: 1;
 }

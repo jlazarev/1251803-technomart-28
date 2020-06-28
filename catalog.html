@@ -168,28 +168,22 @@
 
                 <ul class="sorting-list">
                     <li>
-                            <input id="sorting-price" class="sorting-radio visually-hidden" type="radio" name="sorting-radio" value="sorting-price" checked>
-                            <label for="sorting-price">по цене</label>
+                        <button type="button" class="sorting-item sorting-price sorting-checked" disabled>по цене</button>
                     </li>
                     <li>
-                            <input id="sorting-type" class="sorting-radio visually-hidden" type="radio" name="sorting-radio" value="sorting-type">
-                            <label for="sorting-type">по типу</label>
+                        <button type="button" class="sorting-item sorting-type">по типу</button>
                     </li>
                     <li>
-                            <input id="sorting-function" class="sorting-radio visually-hidden" type="radio" name="sorting-radio" value="sorting-function">
-                            <label for="sorting-function">по функционалу</label>
+                        <button type="button" class="sorting-item sorting-function">по функционалу</button>
                     </li>
                 </ul>
 
                 <ul class="arrows">
                     <li>
-                        <input id="sorting-up" class="sorting-arrow visually-hidden" type="radio" name="sorting-arrow" value="up" checked>
-                        <label class="sorting-up" for="sorting-up" aria-label="по возратанию"></label>
-                        
+                        <button type="button" class="sorting-up arrow-checked" aria-label="по возратанию" disabled></button>     
                     </li>
                     <li>
-                        <input id="sorting-down" class="sorting-arrow visually-hidden" type="radio" name="sorting-arrow" value="down">  
-                        <label class="sorting-down" for="sorting-down" aria-label="по убыванию"></label>
+                        <button type="button" class="sorting-down" aria-label="по убыванию"></button>
                     </li>
                 </ul>
             </section>
