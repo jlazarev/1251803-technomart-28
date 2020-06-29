@@ -681,6 +681,12 @@ img {
 	margin-bottom: 6px;
 }
 
+.slider-perforator,
+.slider-drill {
+	width: 620px;
+	height: 266px;
+}
+
 .slider-perforator {
 	background-color: var(--grey);
 	background-image: url(../img/index/advantages/perforator.jpg);
@@ -722,37 +728,23 @@ img {
 	margin-left: -18px;
 }
 
-.slider input {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
+.slider-controls .radio-button {
+	padding: 0; 
+  	display: inline-block;
+  	margin: 0 3px;
+  	width: 10px;
+  	height: 10px;
+  	border-radius: 50%;
+  	border: 2px solid var(--basic-white);
+  	background-color: var(--basic-white);
+  	cursor: pointer;
 }
 
-.slider-controls label {
-  display: inline-block;
-  margin: 0 3px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 2px solid var(--basic-white);
-  background-color: var(--basic-white);
-  cursor: pointer;
+.slider .radio-button-checked {
+  	background-color: var(--basic-red);
 }
 
-.radio-1:checked ~ .slider-controls label[for="radio-1"],
-.radio-2:checked ~ .slider-controls label[for="radio-2"] {
-  background-color: var(--basic-red);
-}
-
-.radio-1:checked ~ .slider-perforator {
-  display: block;
-}
-
-.radio-2:checked ~ .slider-drill {
-  display: block;
-}
-
-.slider button {
+.slider .slider-arrow {
 	width: 23px;
 	height: 41px;
 	top: 122px;
@@ -773,15 +765,13 @@ img {
 }
 
 .slider a,
-.slider button,
+.slider .slider-arrow,
 .slider-controls {
 	position: absolute;
 }
 
-.slider-perforator,
-.slider-drill {
-	width: 620px;
-	height: 266px;
+.slider .slider-show {
+	display: block;
 }
 
 /* popular-items */
