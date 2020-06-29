@@ -90,26 +90,23 @@
 	    		</div>
 
 	    		<div class="slider">
-					<button class="back" type="button" disabled>назад</button>
-	    			<button class="forward" type="button">вперёд</button>
+					<button class="slider-arrow back" type="button" disabled>назад</button>
+	    			<button class="slider-arrow forward" type="button">вперёд</button>
 
 	    			<a href="catalog.html">открыть каталог</a>
 
-	    			<input class="radio-1" id="radio-1" type="radio" name="slider" value="1" checked>
-	    			<input class="radio-2" id="radio-2" type="radio" name="slider" value="2">
-
 	    			<div class="slider-controls">
-	    				<label for="radio-1"></label>
-	    				<label for="radio-2"></label>
+	    				<button class="radio-button radio-button-checked"></button>
+	    				<button class="radio-button"></button>
 	    			</div>
 
-	    			<div class="slider-perforator">
+	    			<div class="slider-item slider-perforator slider-show">
 	    				<h3>Перфораторы</h3>
 
 	    				<span>Настоящие мужские игрушки</span>
 	                </div>
 
-	                <div class="slider-drill">
+	                <div class="sliuder-item slider-drill">
 	                    <h3>Дрели</h3>
 
 	                    <span>Соседям на радость!</span>
@@ -269,7 +266,7 @@
 	    			Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 	    		</p>
 
-	    		<div class="services-flex">
+	    		<form class="services-flex">
 	    			<input class="delivery" id="delivery-radio" type="radio" name="services-radio" checked>
 	    			<input class="guarantee" id="guarantee-radio" type="radio" name="services-radio">
 	    			<input class="credit" id="credit-radio" type="radio" name="services-radio">
@@ -310,7 +307,7 @@
 
 		                <a href="#">Отправить заявку</a>
 		            </div>
-		        </div>
+		        </form>
 	        </div>
     	</section>
 
