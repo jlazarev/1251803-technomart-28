@@ -2013,6 +2013,10 @@ ul.social-network {
 	opacity: 1;
 }
 
+.filters input:focus ~ label::before {
+	opacity: 1;
+}
+
 .filter-input-checkbox:checked + label:before {
 	background-image: url("../img/catalog/checkbox-on.svg");
 }
