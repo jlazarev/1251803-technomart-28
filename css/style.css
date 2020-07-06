@@ -134,6 +134,7 @@ img {
 	min-width: 150px;
 	padding-top: 10px;
 	padding-left: 29px;
+	padding-right: 15px;
 	position: relative;
 	display: block;
 }
@@ -1566,13 +1567,15 @@ ul.social-network {
 }
 
 .popup-container {
-	padding: 0 80px;
 	display: flex;
 	justify-content: space-between;
 	align-content: flex-start;
 	flex-wrap: wrap;
 	flex-grow: 1;
 	padding-top: 40px;
+	padding-bottom: 0;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 
 .write-us-popup .form-item {
@@ -1765,14 +1768,13 @@ ul.social-network {
 .grid-container-catalog {
 	display: grid;
 	grid-template-columns: 220px 1fr;
-	/*grid-template-rows: 18px 89px 38px -webkit-min-content;*/
+	grid-template-rows: 18px 89px -webkit-min-content -webkit-min-content;
 	grid-template-rows: 18px 89px min-content min-content;
 	grid-gap: 20px;
 	margin-top: 21px;
 }
 
 .catalog-title {
-	padding: 0;
 	margin: 0;
 	font-size: 30px;
 	line-height: 30px;
