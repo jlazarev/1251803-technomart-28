@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
@@ -45,8 +45,8 @@
 
                 <div class="authorization">
                     <div class="user">
-                        <a class="user-link" href="#">Равшан Джамшутович</a>
-                        <a class="logout-link" href="#" aria-label="Выход"></a>
+                        <a class="user-link" href="profile.html">Равшан Джамшутович</a>
+                        <a class="logout-link" href="logout.html" aria-label="Выход"></a>
                     </div>
                     
                     <div class="user-menu">
@@ -96,18 +96,19 @@
                                     <div class="bar"></div>
                                 </div>
 
-                                <div class="toggle toggle-min" tabindex="0"></div>
-                                <div class="toggle toggle-max" tabindex="0"></div>
+                                <div class="toggle toggle-min" tabindex="0" aria-label="минимальная цена"></div>
+                                <div class="toggle toggle-max" tabindex="0" aria-label="максимальная цена"></div>
                             </div>
                         
                             <div class="price-controls">
-                                <label>
-                                    <input type="text" name="min-price" value="0"> 
-                                </label>
-                                <span>–</span> 
-                                <label>
-                                    <input type="text" name="max-price" value="30000">
-                                </label>
+                                
+                                <input type="text" id="min-price" name="min-price" value="0"> 
+                                <label class="visually-hidden" for="min-price">минимальная цена</label>
+
+                                <span>–</span>
+                                
+                                <input type="text" id="max-price" name="max-price" value="30000">
+                                <label class="visually-hidden" for="max-price">максимальная цена</label>
                             </div>
                         </div>
                     </fieldset>
@@ -159,7 +160,7 @@
                         </ul>
                     </fieldset>
 
-            		<input type="submit" name="show" value="показать">
+            		<input type="submit" name="show" value="показать" aria-label="показать">
         		</form>
             </section>
 
