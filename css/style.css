@@ -67,7 +67,6 @@ body {
 	line-height: 24px;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
-
 	min-height: 100%;
 	display: grid;
 	grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
@@ -89,14 +88,14 @@ img {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0)
+  	position: absolute;
+  	width: 1px;
+  	height: 1px;
+  	margin: -1px;
+  	padding: 0;
+  	overflow: hidden;
+ 	border: 0;
+  	clip: rect(0 0 0 0)
 }
 
 /* container*/
@@ -169,7 +168,6 @@ img {
 .cart:active::before {
 	opacity: 0.3;
 }
-
 
 .cart::before {
 	content: "";
@@ -383,7 +381,6 @@ img {
 
 .authorization .user {
 	position: relative;
-
 	background-color: var(--basic-white);
 	font-size: 21px;
 	line-height: 21px;
@@ -743,15 +740,15 @@ img {
 
 .slider-controls .radio-button {
 	padding: 0; 
-  	display: inline-block;
-  	vertical-align: middle;
-  	margin: 0 3px;
-  	width: 10px;
-  	height: 10px;
-  	border-radius: 50%;
-  	border: 2px solid var(--basic-white);
-  	background-color: var(--basic-white);
-  	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 3px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 2px solid var(--basic-white);
+	background-color: var(--basic-white);
+	cursor: pointer;
 }
 
 .slider .radio-button-checked {
@@ -1066,11 +1063,11 @@ img {
 
 .manufacturer-link img {
 	position: absolute;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
+	margin: auto;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
 }
 
 /* services */
@@ -1216,7 +1213,7 @@ img {
 	background-color: var(--error);
 }
 
-p.credit-paragraf {
+p.credit-paragraph {
 	margin-bottom: 28px;
 }
 
@@ -1334,7 +1331,6 @@ p.credit-paragraf {
 	background-color: var(--basic-red);
 	display: block;
 	height: 38px;
-	text-align: center;
 	padding-top: 11px;
 }
 
@@ -1617,6 +1613,7 @@ ul.social-network {
 	line-height: 24px;
 	padding-left: 10px;
 	padding-top: 5px;
+	resize: none;
 }
 
 .popup-close {
@@ -1910,52 +1907,52 @@ ul.social-network {
 }
 
 .range-controls {
-  height: 80px;
-  background-color: var(--background-filters);
-  border-radius: 5px;
-  margin-bottom: 9px;
-  padding-top: 39px;
-  padding-right: 20px;
-  padding-left: 20px;
-  position: relative;
+  	height: 80px;
+  	background-color: var(--background-filters);
+  	border-radius: 5px;
+  	margin-bottom: 9px;
+  	padding-top: 39px;
+  	padding-right: 20px;
+  	padding-left: 20px;
+  	position: relative;
 }
 
 .range-controls .scale {
-  height: 2px;
-  background: #d7dcde;
+  	height: 2px;
+  	background: #d7dcde;
 }
 
 .range-controls .bar {
-  width: 89%;
-  height: 2px;
-  background: var(--basic-green);
+  	width: 89%;
+  	height: 2px;
+  	background: var(--basic-green);
 }
 
 .range-controls .toggle {
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  border: 8px solid var(--basic-white);
-  background-color: var(--toggle-1);
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 var(--toggle-2);
-  position: absolute;
-  top: 31px;
-  left: 0;
-  cursor: pointer;
+  	width: 20px;
+  	height: 20px;
+  	padding: 0;
+  	border: 8px solid var(--basic-white);
+  	background-color: var(--toggle-1);
+  	border-radius: 50%;
+  	box-shadow: 0 2px 1px 0 var(--toggle-2);
+  	position: absolute;
+  	top: 31px;
+  	left: 0;
+  	cursor: pointer;
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+  	left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  	left: 160px;
 }
 
 .price-controls {
-  display: flex;
-  justify-content: space-between;
+  	display: flex;
+  	justify-content: space-between;
 }
 
 .filters input[name="min-price"],
@@ -1966,9 +1963,9 @@ ul.social-network {
 	border: none;
 	background-color: var(--background-filters);
 	width: 95px;
-  	padding: 10px;
-  	text-align: center;
-  	border-radius: 5%;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5%;
 }
 
 .price-controls span {
