@@ -392,7 +392,7 @@ img {
 .user .user-link {
   display: inline-block;
   vertical-align: top;
-  width: calc(100% - 50px);
+  width: calc(100%-50px);
   color: var(--basic-black);
   padding-top: 12px;
   padding-bottom: 12px;
@@ -405,7 +405,7 @@ img {
   width: 46px;
   height: 45px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   position: relative;
 }
 
